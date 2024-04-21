@@ -175,6 +175,7 @@ _start:
 #define TESTNUM gp
 #define RVTEST_FAIL                                                     \
         fence;                                                          \
+	ebreak;								\
         li a0, 1;                                              		\
 	mv a1, TESTNUM;							\
         ecall;								\
